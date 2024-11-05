@@ -1,0 +1,117 @@
+/* Custom styles */
+body {
+    padding-top: 56px; /* Adjust for fixed navbar */
+}
+
+.hero {
+    background: linear-gradient(to right, #f39c12, #e67e22);
+    padding: 100px 0;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+#chatWidget {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+#chatBox {
+    width: 300px;
+    display: none;
+}
+
+#chatMessages {
+    height: 200px;
+    overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+}
+
+
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+    .carousel-item {
+        height: 300px; /* Atur tinggi sesuai kebutuhan */
+        background-size: contain; /* Mengatur gambar agar tidak terpotong */
+        background-position: center; /* Memusatkan gambar */
+        background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    }
+    .carousel-caption {
+        background-color: rgba(226, 200, 200, 0); /* Latar belakang transparan untuk caption */
+        border-radius: 5px; /* Sudut melengkung */
+        color: rgb(250, 242, 5); 
+    }
+
+
+
+     .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .chat-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .modal-body {
+            height: 400px;
+            overflow-y: auto;
+        }
+        .bot-message {
+            text-align: left;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0;
+        }
+        .user-message {
+            text-align: right;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0;
+        }
